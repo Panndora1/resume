@@ -143,3 +143,30 @@ function changeLeft() {
 
 rightBtn.addEventListener('click', changeRight)
 leftBtn.addEventListener('click', changeLeft)
+
+// burger menu
+
+const burger = document.querySelector('.menu-burger');
+const menu = document.querySelector('.menu').cloneNode(true);
+const menuLinks = document.querySelector('.menu-burger__links');
+const body = document.querySelector('.body');
+const area = document.querySelector('.menu-burger__area');
+
+
+function toggleMenu() {
+    burger.classList.toggle('open');
+    menuLinks.classList.toggle('open');
+    body.classList.toggle('open');
+    area.classList.toggle('open');
+    menu.classList.toggle('open');
+    menu.firstElementChild.classList.toggle('open');
+}
+
+burger.addEventListener('click', () => {
+    toggleMenu();
+    menuLinks.appendChild(menu);
+});
+
+area.addEventListener('click', toggleMenu);
+
+menu.firstElementChild.addEventListener('click', toggleMenu);

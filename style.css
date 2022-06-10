@@ -10,6 +10,10 @@
     background-color: #0A142F;
 }
 
+.body.open {
+    overflow: hidden;
+}
+
 /* header */
 
 .header {
@@ -54,6 +58,149 @@
 
 .menu__link:hover {
     color: #FFC93E;
+}
+
+/* menu burger */
+
+.menu-burger {
+    visibility: hidden;
+}
+
+.menu-burger__links {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 2;
+    width: 320px;
+    height: 100%;
+    background-color: #0A142F;
+    transition: 0.4s;
+    display: none;
+    visibility: hidden;
+}
+
+.menu-burger__links.open {
+    right: 0;
+}
+
+.menu-burger__area {
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+.menu-burger__area.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);
+    display: block;
+}
+
+.menu-burger__span,
+.menu-burger::after,
+.menu-burger::before {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Tablet */
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: flex-end;
+    }
+
+    .menu-burger {
+        position: relative;
+        right: 3vw;
+        top: 0px;
+        visibility: visible;
+        display: block;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+    }
+
+    .menu__list {
+        padding-right: 0;
+    }
+
+    .menu-burger__links.open {
+        width: 320px;
+        padding-right: 0;
+        display: block;
+        visibility: visible;
+    }
+
+    .menu-burger__links {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu-burger__span,
+    .menu-burger::after,
+    .menu-burger::before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background-color: #FFC93E;
+        margin: 0 auto;
+        border-radius: 2px;
+    }
+
+    .menu-burger__span {
+        top: 9px;
+        height: 3px;
+        transition: 0.4s;
+    }
+
+    .menu-burger::before {
+        content: '';
+        top: 0px;
+        transition: 0.4s;
+    }
+
+    .menu-burger::after {
+        content: '';
+        bottom: 1px;
+        transition: 0.4s;
+    }
+
+    .menu-burger.open {
+        position: absolute;
+        right: 5vw;
+        top: 5vw;
+        transform: rotate(90deg);
+        transition: 0.2s;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.open {
+        display: flex;
+        padding-top: 248px;
+        flex-direction: column;
+    }
+
+    .menu__list.open {
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .menu__item {
+        color: #0A142F;
+    }
+
 }
 
 /* hero */
@@ -140,6 +287,22 @@
 }
 .star3 {
     right: 120px;
+}
+
+@media (max-width: 580px) {
+    .hero__image-wrapper {
+        display: none;
+    }
+
+    .hero__about {
+        width: 100%;
+    }
+
+    .hero__header,
+    .hero__disc {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 /* about me */
@@ -257,6 +420,34 @@
     max-width: 60px;
 }
 
+/* media */
+
+@media (max-width: 890px) {
+    .about-me__img {
+        width: 30%;
+    }
+
+    .about-me__img:nth-child(4),
+    .about-me__img:nth-child(1) {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .about-me__images {
+        display: none;
+    }
+
+    .about-me__text {
+        width: 100%;
+    }
+
+    .about-me__container {
+        height: 500px;
+    }
+}
+
 /* education */
 
 .edu {
@@ -329,6 +520,26 @@
     font-size: calc(12px + 12 * (100vw / 1200));
     line-height: calc(19px + 10 * (100vw / 1200));
     color: #FFFFFF;
+}
+
+@media (max-width: 630px) {
+
+    .edu {
+        background: none;
+    }
+
+    .edu__container {
+        height: 450px;
+        padding-bottom: 0;
+    }
+
+    .edu__img {
+        display: none;
+    }
+
+    .edu__list {
+        width: 100%;
+    }
 }
 
 /* jobs */
@@ -406,6 +617,16 @@
     width: 100%;
     max-width: 50px;
     padding-bottom: 20px;
+}
+
+/* media */
+
+@media (max-width: 1142px) {
+    .jobs__point {
+        width: 100%;
+        border-radius: 50px !important; 
+        margin: 0 !important;
+    }
 }
 
 /* skills */
