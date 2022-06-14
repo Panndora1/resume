@@ -700,7 +700,7 @@
     max-width: 1400px;
     height: 100%;
     margin: auto;
-    padding: 80px 0 80px 0;
+    padding: 100px 0 80px 0;
 }
 
 .skills__wrapper {
@@ -755,7 +755,7 @@
 }
 
 .html {
-    width: 95%;
+    width: 70%;
 }
 
 .html.active {
@@ -764,11 +764,11 @@
 
 @keyframes html {
     0% {width: 0%;}
-    100% {width: 95%;}
+    100% {width: 70%;}
 }
 
 .css {
-    width: 87%;
+    width: 60%;
 }
 
 .css.active {
@@ -777,11 +777,11 @@
 
 @keyframes css {
     0% {width: 0%;}
-    100% {width: 87%;}
+    100% {width: 60%;}
 }
 
 .js {
-    width: 70%;
+    width: 50%;
 }
 
 .js.active {
@@ -790,11 +790,11 @@
 
 @keyframes js {
     0% {width: 0%;}
-    100% {width: 70%;}
+    100% {width: 50%;}
 }
 
 .git {
-    width: 50%;
+    width: 40%;
 }
 
 .git.active {
@@ -803,11 +803,11 @@
 
 @keyframes git {
     0% {width: 0%;}
-    100% {width: 50%;}
+    100% {width: 40%;}
 }
 
 .sass {
-    width: 30%;
+    width: 20%;
 }
 
 .sass.active {
@@ -816,7 +816,7 @@
 
 @keyframes sass {
     0% {width: 0%;}
-    100% {width: 30%;}
+    100% {width: 20%;}
 }
 
 .node {
@@ -833,7 +833,7 @@
 }
 
 .bem {
-    width: 90%;
+    width: 50%;
 }
 
 .bem.active {
@@ -842,11 +842,11 @@
 
 @keyframes bem {
     0% {width: 0%;}
-    100% {width: 90%;}
+    100% {width: 50%;}
 }
 
 .ad {
-    width: 92%;
+    width: 55%;
 }
 
 .ad.active {
@@ -855,11 +855,11 @@
 
 @keyframes ad {
     0% {width: 0%;}
-    100% {width: 92%;}
+    100% {width: 55%;}
 }
 
 .graf {
-    width: 99%;
+    width: 89%;
 }
 
 .graf.active {
@@ -868,7 +868,7 @@
 
 @keyframes graf {
     0% {width: 0%;}
-    100% {width: 99%;}
+    100% {width: 89%;}
 }
 
 /* skills media */
@@ -898,7 +898,7 @@
     max-width: 1400px;
     height: 100%;
     margin: auto;
-    padding: 80px 0 80px 0;
+    padding: 80px 0 50px 0;
 }
 
 .projects__header {

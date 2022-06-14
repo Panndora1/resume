@@ -49,18 +49,17 @@
                     <div class="about-me__text">
                         <h2 class="about-me__header h2">Немного обо мне</h2>
                         <p class="about-me__desc">Меня зовут Дурдыева Валентина и я начинающий frontend разработчик.
-                            На данный момент у меня еще нет опыта коммерческой разработки, однако
-                            есть много интересных учебных и pet-проектов (включая этот сайт). О них
-                            я расскажу немного ниже.
+                            Я хорошо разбираюсь в HTML и CSS. Могу выполнять проекты с использованием JavaScript. Знаю
+                            методологию BEM и использую ее в своих проектах. Знакома с препроцессоарми SASS и LESS. Также 
+                            в своем обучении сталкивалась с модулями Node.js (path, fs).
                         </p>
-                        <p class="about-me__desc">Недостаток опыта я компенсирую своим упорством и целеустремленностью.
-                            Принимая меня на работу, вы получаете высоко замотивированного разработчика.
-                            Кроме того, могу смело отметить среди моих положительных качеств - быструю
-                            обучаемость.
+                        <p class="about-me__desc">Я быстро обучаюсь всему новому и умею самостоятельно находить нужную информацию. 
+                            Поэтому, даже если я чего-то еще не знаю, я достаточно быстро найду информацию и адаптирую ее для 
+                            выполнения своей задачи. (<i>Древняя мудрость: мало найти решение на stackoverflow, необходимо его применить,
+                            не сломав проект.</i>)
                         </p>
-                        <p class="about-me__desc">Я достаточно активная и дружелюбная. Умею работать в команде. Договариваться.
-                            Нахожу подход к каждому человеку. Поэтому со мной очень приятно и комфортно
-                            работать.
+                        <p class="about-me__desc">Кроме Hard Skills, я обладаю отличными Soft Skills. Я отлично умею работать в команде,
+                            могу найти подход к каждому человеку и умею разрешать спорные ситуации. Со мной приятно и комфортно работать.
                         </p>
                         <p class="about-me__desc">Немного о моих хобби и увлечениях:</p>
                         <ul class="about-me__list">
@@ -109,6 +108,112 @@
                     </div>
                 </div>
                 <img src="./assets/Ornament.png" alt="circle" class="edu__back-image">
+            </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            <div class="skills__container">
+                <h2 class="skills__header h2">Мои навыки</h2>
+                <div class="skills__wrapper">
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">HTML5</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress html"></div>
+                            <p class="sills__per">70%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">CSS3</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress css"></div>
+                            <p class="sills__per">60%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">JavaScript</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress js"></div>
+                            <p class="sills__per">50%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Git and GitHub</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress git"></div>
+                            <p class="sills__per">40%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Sass</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress sass"></div>
+                            <p class="sills__per">20%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Node.js</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress node"></div>
+                            <p class="sills__per">10%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">BEM</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress bem"></div>
+                            <p class="sills__per">50%</p>
+                        </div>                        
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Адаптивная верстка</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress ad"></div>
+                            <p class="sills__per">55%</p>
+                        </div>                        
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Графические редакторы</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress graf"></div>
+                            <p class="sills__per">89%</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects__container">
+                <h2 class="projects__header h2">Мои проекты</h2>
+                <div class="slider">
+                    <button class="slider__control left"><img src="./assets/left.png" alt="left button" class="slider__arrow"></button>
+                    <div class="slider__item">
+                        <img src="./assets/p1.jpg" alt="project" class="slider__img">
+                        <h4 class="slider__header">Виртуальная клавиатура</h4>
+                        <p class="slider__desc">Реализован функционал набора текста с помощью виртуальной и физической клавиатуры, 
+                                                смена раскладки языка, горячие клавиши. Функционал виртуальной клавиатуры повторяет
+                                                функционал физической. HTML код полностью генерируется с помощью JavaScript. В работе
+                                                использованы классы, как шаблон для генерации клавиш.
+                        </p>
+                        <a href="https://panndora1.github.io/virtual-keyboard/" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
+                    </div>
+                    <div class="slider__item">
+                        <img src="./assets/p2.jpg" alt="project" class="slider__img">
+                        <h4 class="slider__header">Многостраничный сайт</h4>
+                        <p class="slider__desc">Реализован многостраничный сайт согласно макету. Адаптивная верстка. Реализована 
+                                                бесконченая карусель. Выполнены popup-карточки для каждого элемента карусели. 
+                                                Используемые технологии при работе: HTML5, CSS3, JS ES6.
+                        </p>
+                        <a href="https://rolling-scopes-school.github.io/panndora1-JSFE2022Q1/shelter/pages/pets/index.html" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
+                    </div>
+                    <button class="slider__control right"><img src="./assets/right.png" alt="right button" class="slider__arrow"></button>
+                </div>
+                <div class="slider__mobile-control">
+                    <div class="slider__dot dot1"></div>
+                    <div class="slider__dot dot2"></div>
+                    <div class="slider__dot dot3"></div>
+                    <div class="slider__dot dot4"></div>
+                </div>
+                <a href="https://github.com/Panndora1" class="slider__link" target="_ blank"><button class="projects__button">Посмотреть проекты на GitHub</button></a>
             </div>
         </section>
         <section class="jobs" id="jobs">
@@ -184,111 +289,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="skills__container">
-                <h2 class="skills__header h2">Мои навыки</h2>
-                <div class="skills__wrapper">
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">HTML5</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress html"></div>
-                            <p class="sills__per">95%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">CSS3</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress css"></div>
-                            <p class="sills__per">87%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">JavaScript</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress js"></div>
-                            <p class="sills__per">70%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">Git and GitHub</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress git"></div>
-                            <p class="sills__per">50%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">Sass</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress sass"></div>
-                            <p class="sills__per">30%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">Node.js</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress node"></div>
-                            <p class="sills__per">10%</p>
-                        </div>
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">BEM</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress bem"></div>
-                            <p class="sills__per">90%</p>
-                        </div>                        
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">Адаптивная верстка</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress ad"></div>
-                            <p class="sills__per">92%</p>
-                        </div>                        
-                    </div>
-                    <div class="skills__skill">
-                        <h3 class="skills__topic topic">Графические редакторы</h3>
-                        <div class="skills__progress-bar">
-                            <div class="skills__progress graf"></div>
-                            <p class="sills__per">99%</p>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <div class="projects__container">
-                <h2 class="projects__header h2">Мои проекты</h2>
-                <div class="slider">
-                    <button class="slider__control left"><img src="./assets/left.png" alt="left button" class="slider__arrow"></button>
-                    <div class="slider__item">
-                        <img src="./assets/p1.jpg" alt="project" class="slider__img">
-                        <h4 class="slider__header">Виртуальная клавиатура</h4>
-                        <p class="slider__desc">Реализован функционал набора текста с помощью виртуальной и физической клавиатуры, 
-                                                смена раскладки языка, горячие клавиши. Функционал виртуальной клавиатуры повторяет
-                                                функционал физической. HTML код полностью генерируется с помощью JavaScript. В работе
-                                                использованы классы, как шаблон для генерации клавиш.
-                        </p>
-                        <a href="https://panndora1.github.io/virtual-keyboard/" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
-                    </div>
-                    <div class="slider__item">
-                        <img src="./assets/p2.jpg" alt="project" class="slider__img">
-                        <h4 class="slider__header">Многостраничный сайт</h4>
-                        <p class="slider__desc">Реализован многостраничный сайт согласно макету. Адаптивная верстка. Реализована 
-                                                бесконченая карусель. Выполнены popup-карточки для каждого элемента карусели. 
-                                                Используемые технологии при работе: HTML5, CSS3, JS ES6.
-                        </p>
-                        <a href="https://rolling-scopes-school.github.io/panndora1-JSFE2022Q1/shelter/pages/pets/index.html" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
-                    </div>
-                    <button class="slider__control right"><img src="./assets/right.png" alt="right button" class="slider__arrow"></button>
-                </div>
-                <div class="slider__mobile-control">
-                    <div class="slider__dot dot1"></div>
-                    <div class="slider__dot dot2"></div>
-                    <div class="slider__dot dot3"></div>
-                    <div class="slider__dot dot4"></div>
-                </div>
-                <a href="https://github.com/Panndora1" class="slider__link" target="_ blank"><button class="projects__button">Посмотреть проекты на GitHub</button></a>
             </div>
         </section>
     </main>
