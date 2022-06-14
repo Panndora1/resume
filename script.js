@@ -74,7 +74,7 @@ const sliderInfo = [
         desc: `Опыт работы с медиа и создания кастомного вида панели управления. Реализовано
         проигрывание песен, постановка на паузу, смена обложек, перемотка трека, переключение треков.
         Для данной работы использовались следующие технологии: HTML5, CSS3, JS ES6.`,
-        href: `https://panndora1.github.io/virtual-keyboard/`
+        href: `https://rolling-scopes-school.github.io/panndora1-JSFEPRESCHOOL/audio-player/`
     },
     {
         imgSrc: "./assets/p4.jpg",
@@ -82,7 +82,7 @@ const sliderInfo = [
         desc: `Реализована небольшая игра по типу Flappy Bird. Птичка управляется с помощью клавиатуры.
         Реализован подсчет очков в игре, перезапуск игры при поражении. Дополнительно реализована возможность
         смены внешнего вида птички и фона. Для данной игры были использованы тезнологии: HTML5 + Canvas, CSS3, JS ES6.`,
-        href: `https://panndora1.github.io/virtual-keyboard/`
+        href: `https://rolling-scopes-school.github.io/panndora1-JSFEPRESCHOOL/randome-game/`
     }
 ]
 
@@ -170,3 +170,38 @@ burger.addEventListener('click', () => {
 area.addEventListener('click', toggleMenu);
 
 menu.firstElementChild.addEventListener('click', toggleMenu);
+
+// mobile slider
+
+const dot = document.querySelectorAll('.slider__dot');
+const dotControl = document.querySelector('.slider__mobile-control');
+
+dotControl.addEventListener('click', () => {
+    dot.forEach(el => {
+        el.classList.remove('active');
+    })
+
+    event.target.classList.add('active')
+
+    if(event.target.classList.contains('dot1')) {
+            sliderImg[1].src = sliderInfo[0].imgSrc;
+            header[1].textContent = sliderInfo[0].header;
+            desc[1].textContent = sliderInfo[0].desc;
+            link[1].href = sliderInfo[0].href;
+    } else if (event.target.classList.contains('dot2')) {
+            sliderImg[1].src = sliderInfo[1].imgSrc;
+            header[1].textContent = sliderInfo[1].header;
+            desc[1].textContent = sliderInfo[1].desc;
+            link[1].href = sliderInfo[1].href;
+    } else if (event.target.classList.contains('dot3')) {
+        sliderImg[1].src = sliderInfo[2].imgSrc;
+            header[1].textContent = sliderInfo[2].header;
+            desc[1].textContent = sliderInfo[2].desc;
+            link[1].href = sliderInfo[2].href;
+    } else if (event.target.classList.contains('dot4')) {
+        sliderImg[1].src = sliderInfo[3].imgSrc;
+            header[1].textContent = sliderInfo[3].header;
+            desc[1].textContent = sliderInfo[3].desc;
+            link[1].href = sliderInfo[3].href;
+    }
+})
