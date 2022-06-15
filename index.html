@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Resume: Valentina Durdieva</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#about-me" class="menu__link">Обо мне</a></li>
+                <li class="menu__item"><a href="#edu" class="menu__link">Образование</a></li>
+                <li class="menu__item"><a href="#skills" class="menu__link">Навыки</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link">Мои проекты</a></li>
+                <li class="menu__item"><a href="#jobs" class="menu__link">Опыт работы</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="menu-burger">
+            <span class="menu-burger__span"></span>
+        </div>
+        <div class="menu-burger__area"></div>
+        <div class="menu-burger__links"></div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__about">
+                    <h1 class="hero__header">Валентина Дурдыева</h1>
+                    <p class="hero__disc">Соискатель на должность junior/trainee frontend developer</p>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="./assets/me.jpg" alt="my photo" class="hero__image">
+                </div>
+                <div class="hero__stars">
+                    <img src="./assets/Star.png" alt="star" class="hero__star star1">
+                    <img src="./assets/Star.png" alt="star" class="hero__star star2">
+                    <img src="./assets/Star.png" alt="star" class="hero__star star3">
+                </div>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="about-me__container">
+                <div class="about-me__wrapper">
+                    <div class="about-me__text">
+                        <h2 class="about-me__header h2">Немного обо мне</h2>
+                        <p class="about-me__desc">Меня зовут Дурдыева Валентина и я начинающий frontend разработчик.
+                            Я хорошо разбираюсь в HTML и CSS. Могу выполнять проекты с использованием JavaScript. Знаю
+                            методологию BEM и использую ее в своих проектах. Знакома с препроцессоарми SASS и LESS. Также 
+                            в своем обучении сталкивалась с модулями Node.js (path, fs).
+                        </p>
+                        <p class="about-me__desc">Я быстро обучаюсь всему новому и умею самостоятельно находить нужную информацию. 
+                            Поэтому, даже если я чего-то еще не знаю, я достаточно быстро найду информацию и адаптирую ее для 
+                            выполнения своей задачи. (<i>Древняя мудрость: мало найти решение на stackoverflow, необходимо его применить,
+                            не сломав проект.</i>)
+                        </p>
+                        <p class="about-me__desc">Кроме Hard Skills, я обладаю отличными Soft Skills. Я отлично умею работать в команде,
+                            могу найти подход к каждому человеку и умею разрешать спорные ситуации. Со мной приятно и комфортно работать.
+                        </p>
+                        <p class="about-me__desc">Немного о моих хобби и увлечениях:</p>
+                        <ul class="about-me__list">
+                            <li class="about-me__item">Большой теннис</li>
+                            <li class="about-me__item">Dungeons and Dragons (DnD)</li>
+                            <li class="about-me__item">Игра в шахматы</li>
+                            <li class="about-me__item">Рисование</li>
+                        </ul>
+                    </div>
+                    <div class="about-me__images">
+                        <img src="./assets/1.png" alt="Большой теннис" class="about-me__img">
+                        <img src="./assets/2.png" alt="Dungeons and Dragons (DnD)" class="about-me__img">
+                        <img src="./assets/3.jpg" alt="Игра в шахматы" class="about-me__img">
+                        <img src="./assets/4.jpg" alt="Рисование" class="about-me__img">
+                    </div>
+                </div>
+                <img src="./assets/Ornament.png" alt="circle" class="about-me__back-image">
+                <img src="./assets/Ornament.png" alt="circle" class="about-me__back-image">
+            </div>
+        </section>
+        <section class="edu" id="edu">
+            <div class="edu__container">
+                <img src="./assets/sertif.PNG" alt="education" class="edu__img">
+                <div class="edu__list">
+                    <h2 class="edu__header h2">Мое образование</h2>
+                    <div class="edu__item">
+                        <h3 class="edu__topic topic">Ижевский Государственный технический Университет</h3>
+                        <p class="edu__desc">2012 - 2016</p>
+                        <p class="edu__desc">Специальность "Реклама и связи с общественностью в коммерческой сфере"</p>
+                        <img src="./assets/check.png" alt="check mark" class="edu__icon">
+                    </div>
+                    <div class="edu__item">
+                        <h3 class="edu__topic topic">The rolling scopes school</h3>
+                        <p class="edu__desc">2021 - 2022</p>
+                        <p class="edu__desc">Подготовительные курсы Frontend разработки. На курсе изучались следующие технологии: HTML, CSS, 
+                                             JavaScript, Git и GitHub</p>
+                        <img src="./assets/check.png" alt="check mark" class="edu__icon">
+                    </div>
+                    <div class="edu__item">
+                        <h3 class="edu__topic topic">The rolling scopes school</h3>
+                        <p class="edu__desc">2022 - настоящее время</p>
+                        <p class="edu__desc">Базовый курс Frontend разработки. На курсе изучаются следующие технологии: препроцессоры (Sass),
+                                             Webpack, Node.js, TypeScript. А также углубленное изучение HTML, CSS, JavaScript, Git и GitHub.
+                        </p>
+                        <img src="./assets/check.png" alt="check mark" class="edu__icon">
+                    </div>
+                </div>
+                <img src="./assets/Ornament.png" alt="circle" class="edu__back-image">
+            </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            <div class="skills__container">
+                <h2 class="skills__header h2">Мои навыки</h2>
+                <div class="skills__wrapper">
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">HTML5</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress html"></div>
+                            <p class="sills__per">70%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">CSS3</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress css"></div>
+                            <p class="sills__per">60%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">JavaScript</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress js"></div>
+                            <p class="sills__per">50%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Git and GitHub</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress git"></div>
+                            <p class="sills__per">40%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Sass</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress sass"></div>
+                            <p class="sills__per">20%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Node.js</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress node"></div>
+                            <p class="sills__per">10%</p>
+                        </div>
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">BEM</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress bem"></div>
+                            <p class="sills__per">50%</p>
+                        </div>                        
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Адаптивная верстка</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress ad"></div>
+                            <p class="sills__per">55%</p>
+                        </div>                        
+                    </div>
+                    <div class="skills__skill">
+                        <h3 class="skills__topic topic">Графические редакторы</h3>
+                        <div class="skills__progress-bar">
+                            <div class="skills__progress graf"></div>
+                            <p class="sills__per">89%</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects__container">
+                <h2 class="projects__header h2">Мои проекты</h2>
+                <div class="slider">
+                    <button class="slider__control left"><img src="./assets/left.png" alt="left button" class="slider__arrow"></button>
+                    <div class="slider__item">
+                        <img src="./assets/p1.jpg" alt="project" class="slider__img">
+                        <h4 class="slider__header">Виртуальная клавиатура</h4>
+                        <p class="slider__desc">Реализован функционал набора текста с помощью виртуальной и физической клавиатуры, 
+                                                смена раскладки языка, горячие клавиши. Функционал виртуальной клавиатуры повторяет
+                                                функционал физической. HTML код полностью генерируется с помощью JavaScript. В работе
+                                                использованы классы, как шаблон для генерации клавиш.
+                        </p>
+                        <a href="https://panndora1.github.io/virtual-keyboard/" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
+                    </div>
+                    <div class="slider__item">
+                        <img src="./assets/p2.jpg" alt="project" class="slider__img">
+                        <h4 class="slider__header">Многостраничный сайт</h4>
+                        <p class="slider__desc">Реализован многостраничный сайт согласно макету. Адаптивная верстка. Реализована 
+                                                бесконченая карусель. Выполнены popup-карточки для каждого элемента карусели. 
+                                                Используемые технологии при работе: HTML5, CSS3, JS ES6.
+                        </p>
+                        <a href="https://rolling-scopes-school.github.io/panndora1-JSFE2022Q1/shelter/pages/pets/index.html" class="slider__link" target="_ blank"><button class="slider__button">Посмотреть подробнее</button></a>
+                    </div>
+                    <button class="slider__control right"><img src="./assets/right.png" alt="right button" class="slider__arrow"></button>
+                </div>
+                <div class="slider__mobile-control">
+                    <div class="slider__dot dot1 active"></div>
+                    <div class="slider__dot dot2"></div>
+                    <div class="slider__dot dot3"></div>
+                    <div class="slider__dot dot4"></div>
+                </div>
+                <a href="https://github.com/Panndora1" class="slider__link" target="_ blank"><button class="projects__button">Посмотреть проекты на GitHub</button></a>
+            </div>
+        </section>
+        <section class="jobs" id="jobs">
+            <div class="jobs__container">
+                <h2 class="jobs__header h2">Опыт работы</h2>
+                <div class="jobs__schedule">
+                    <div class="jobs__point">
+                        <img src="./assets/one.png" alt="icon" class="jobs__icon">
+                        <h3 class="jobs__topic topic">Группа компаний "Пешта"</h3>
+                        <p class="jobs__desc">Руководитель отдела маркетинга. 2020 - настоящее время. Ижевск</p>
+                        <p class="jobs__desc">Обязанности:</p>
+                        <ul class="jobs__list">
+                            <li class="jobs__item">Управление командой и взаимодействие с подрядными организациями, такими как web-разработчики,
+                                                   директологи, дизайнеры. Составление ТЗ, контроль, работа с документацией.
+                            </li>
+                            <li class="jobs__item">Разработка годового плана маркетинга для всей организации. Маркетинговые
+                                                   исследования. Финансовое планирование рекламных кампаний. Соблюдение сроков.
+                                                   Отчетность по результатам. 
+                            </li>
+                            <li class="jobs__item">Разработка новых продуктов. Вывод продуктов на новые рынки. Продвижение.</li>
+                            <li class="jobs__item">Администрорвание сайта(Bitrix).</li>
+                        </ul>
+                    </div>
+                    <div class="jobs__point">
+                        <img src="./assets/two.png" alt="icon" class="jobs__icon">
+                        <h3 class="jobs__topic topic">Туристическое агентство "Chili Tours"</h3>
+                        <p class="jobs__desc">Директор по маркетингу. 2018 - 2020. Пермь</p>
+                        <p class="jobs__desc">Обязанности:</p>
+                        <ul class="jobs__list">
+                            <li class="jobs__item">Маркетинговые исследования и планирование. Настройка и 
+                                                   контроль рекламных кампаний (контекст, таргет, email). Контроль
+                                                   показателей. Оптимизация
+                            </li>
+                            <li class="jobs__item">Разработка сайта на CMS Joomla. Администрирование. SEO-оптимизация.
+                            </li>
+                            <li class="jobs__item">Взаимодействие с командой. Постановка задач, контроль, урегулирование
+                                                   спорных ситуаций. Составление плана обучения и адаптации для новых
+                                                   сотрудников. Разработка мотивирующих мероприятий для сотрудников.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs__point">
+                        <img src="./assets/three.png" alt="icon" class="jobs__icon">
+                        <h3 class="jobs__topic topic">Туристическое агентство "Акапулько"</h3>
+                        <p class="jobs__desc">Маркетолог. 2017 - 2018. Пермь</p>
+                        <p class="jobs__desc">Обязанности:</p>
+                        <ul class="jobs__list">
+                            <li class="jobs__item">Администрирование сайта компании (CMS Joomla). Создание новых
+                                                   страниц. Наполнение контентом. 
+                            </li>
+                            <li class="jobs__item">Внешняя и внутренняя поисковая оптимизация.
+                            </li>
+                            <li class="jobs__item">Таргетинг и SMM. E-mail продвижение. Разработка маркетинговых
+                                                   акций. Разработка мероприятий направленных  на поддержание 
+                                                   корпоративной культуры.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jobs__point">
+                        <img src="./assets/four.png" alt="icon" class="jobs__icon">
+                        <h3 class="jobs__topic topic">Магазин "Газовик"</h3>
+                        <p class="jobs__desc">Маркетолог. 2016. Пермь</p>
+                        <p class="jobs__desc">Обязанности:</p>
+                        <ul class="jobs__list">
+                            <li class="jobs__item">Наполнение сайта контентом (Bitrix). Контроль и своевременное
+                                                   обновление цен на сайте.
+                            </li>
+                            <li class="jobs__item">Взаимодействие с подрядчиками (типографии, рекламные агентства, дизайнеры,
+                                                   SEO-специалисты, директологи)
+                            </li>
+                            <li class="jobs__item">Аналитика проведенных маркетинговых кампаний. Корректировка. Документооборот.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer__container">
+            <h3 class="footer__header topic">Мои контакты</h3>
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item"><b>Email:</b> valentina_pavlovna1881@mail.ru</li>
+                    <li class="footer__item"><b>Телефон:</b> +7 (996) 324 92 65</li>
+                </ul>
+            </nav>
+            <div class="footer__messengers">
+                <a href="https://github.com/Panndora1" target="_ blank"><img src="./assets/github.png" alt="githab" class="footer__icon"></a>
+                <a href="https://vk.com/id99686660" target="_ blank"><img src="./assets/vk.png" alt="vkontakte" class="footer__icon"></a>
+                <a href="https://t.me/karavaeva_v" target="_ blank"><img src="./assets/telegram.png" alt="telegram" class="footer__icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
